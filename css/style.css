@@ -37,7 +37,7 @@ header{
   transform: scale(0);
 
 }
-
+.navbar .nav-item .nav-link:hover::before,
 .navbar .nav-item .nav-link.active::before{
   /* width: fit-content; */
   transform: scale(1);
@@ -110,47 +110,7 @@ h2:after {
     margin-top: 15px;
   }
 
-  .contact-form {
-    width: 60%;
-    margin: 0 auto;
-  }
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 2px solid rgb(203, 235, 210);
-  }
-  textarea {
-    height: 100%;
-  }
-  input[type="checkbox"] {
-    margin: 10px 5px 10px 0;
-  }
-form .row{
-  margin-top: 10px;
-}
-form label{
-  font-weight: 600;
-  color: #555;
-}
-input[type="submit"] {
-  display: inline-block;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-weight: 300;
-  border-radius: 200px;
-  transition: background-color 0.2s, border 1.2s;
-}
-input[type="submit"] {
-  background-color: #e67e22;
-  color: white;
-  border: 1px solid #e67e22;
-  margin-right: 25px;
-}
-
+  
 footer{
     margin-top: 10px;
     background-color: hsl(224,56%,12%);
@@ -159,12 +119,13 @@ footer{
     padding: 2rem 0;
     color: #fff;
 }
+
 .copy{
    font-size: x-small;
 }
 .footer__icon {
     font-size: 2rem;
-    color: #fff;
+    color: rgb(14, 13, 13);
     margin: 10px;
 }
 .fb-a:hover{
