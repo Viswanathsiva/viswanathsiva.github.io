@@ -37,12 +37,13 @@ header{
   transform: scale(0);
 
 }
-.navbar .nav-item .nav-link:hover::before,.navbar .nav-item .nav-link.active::before{
+
+.navbar .nav-item .nav-link.active::before{
   /* width: fit-content; */
   transform: scale(1);
 }
 
-.profile{
+.profile,.personal-info{
     z-index: 2;
     position: absolute;
     top: 50%;
@@ -60,17 +61,26 @@ header{
     margin: 0px auto 0px auto;
     color: rgb(221, 76, 51);
 }
-section {
+section  {
     padding: 80px 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
   }
-  .col-lg{
-    background-color: #1DA1F2;
-    margin: 40px 40px;
+  .col-3{
+    border: 1px solid;
+  }
+  .col-lg,.col-4{
+    background-color: #cccccc;
+    /* margin: 40px 40px; */
+    /* margin-top: 30px; */
     border-radius: 5px;
   }
-.section-features{
-  /* margin-bottom: 10px; */
-}
+  .intern-sec{
+    padding: 40px 0px 0px 0px;
+  }
+
+
 #sec-title{
     color: #555;
   font-weight: 400;
@@ -83,7 +93,7 @@ section {
 }
 .card-subtitle{
   font-size: small;
-  border: 1px solid;
+  /* border: 1px solid; */
   width: fit-content;
   padding: 3px 5px;
   color: #fff !important;
@@ -99,6 +109,47 @@ h2:after {
     margin: 0 auto;
     margin-top: 15px;
   }
+
+  .contact-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 2px solid rgb(203, 235, 210);
+  }
+  textarea {
+    height: 100%;
+  }
+  input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+  }
+form .row{
+  margin-top: 10px;
+}
+form label{
+  font-weight: 600;
+  color: #555;
+}
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 1.2s;
+}
+input[type="submit"] {
+  background-color: #e67e22;
+  color: white;
+  border: 1px solid #e67e22;
+  margin-right: 25px;
+}
 
 footer{
     margin-top: 10px;
