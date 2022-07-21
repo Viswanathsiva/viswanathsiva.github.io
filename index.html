@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -16,23 +16,26 @@
         <nav class="navbar-dark fixed-top bg-dark navbar navbar-expand-lg">
           <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon "></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="nav-button">
+                <span class="navbar-toggler-icon"></span>
+              </div>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item me-5">
-                  <a class="nav-link fw-bold text-white active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link one fw-bold text-white active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item me-5">
-                  <a class="nav-link fw-bold text-white" href="#education">Education</a>
+                  <a class="nav-link two fw-bold text-white" href="#education">Education</a>
                 </li>
                 <li class="nav-item me-5">
-                  <a class="nav-link fw-bold text-white" href="#work">Work</a>
+                  <a class="nav-link three fw-bold text-white" href="#work">Experience</a>
                 </li>
                 <li class="nav-item me-5">
-                  <a class="nav-link fw-bold text-white" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                  <a class="nav-link four fw-bold text-white" href="#contact">Contact</a>
                 </li>
+                
               </ul>
             </div>
           </div>
@@ -55,9 +58,9 @@
       </div>
         <!-- <hr class="b_border"> -->
         
-      <div class="container">
-        <div class="row ">
-          <div class="col-lg"> 
+      <div class="container ">
+        <div class="row mx-4 ">
+          <div class="col-lg my-3 me-3"> 
               <div class="card-body">
                 <h5 class="card-title">Bachelor of Engineering</h5>
                 <h6 class="card-subtitle mb-2 text-muted">2018-2022</h6>
@@ -65,7 +68,7 @@
                 <p class="card-text">Government College of Engineering - Bargur</p>
               </div>
           </div>
-          <div class="col-lg"> 
+          <div class="col-lg my-3 me-3"> 
               <div class="card-body">
                 <h5 class="card-title">HSC</h5>
                 <h6 class="card-subtitle mb-2 text-muted">2016-2018</h6>
@@ -73,7 +76,7 @@
                 <p class="card-text">Tagore Matric Hr. Sec. School</p>
               </div>
           </div>
-          <div class="col-lg"> 
+          <div class="col-lg my-3 me-3"> 
               <div class="card-body">
                 <h5 class="card-title">SSLC</h5>
                 <h6 class="card-subtitle mb-2 text-muted">2015-2016</h6>
@@ -88,42 +91,111 @@
     </section>
     <hr>
     <section id="work" >
-        <h2 id="sec-title" class="text-center">Work</h2>
+        <h2 id="sec-title" class="text-center">Work </h2>
         <!-- <hr class="b_border"> -->
         <div class="container">
-          <div class="row ">
-            <div class="col-lg"> 
-                <div class="card-body">
+          <div class="row mx-4">
+          
+            <div class="col-lg my-3 me-3"> 
+                <div class="card-body ">
                   <h5 class="card-title">Programmer Analyst Trainee</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">2022-Present</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Jan 2022-Present</h6>
                   <!-- <p class="card-text mb-0">Electrical and Electronics</p> -->
                   <p class="card-text">Cognizant Technology Solutions</p>
                 </div>
             </div>
-            <div class="col-lg"> 
-                <div class="card-body">
-                  <h5 class="card-title">HSC</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">2016-2018</h6>
-                  <p class="card-text mb-0">Mathematics and Biology</p>
-                  <p class="card-text">Tagore Matric Hr. Sec. School</p>
+        </div>
+        </div>
+  
+        <h2 id="sec-title" class="text-center intern-sec">Internship </h2>
+        <!-- <hr class="b_border"> -->
+        <div class="container">
+          <div class="row mx-4">
+          
+            <div class="col-lg my-3 me-3"> 
+                <div class="card-body ">
+                  <h5 class="card-title">Web Development</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Jul 2021 - Sep 2021</h6>
+                  <!-- <p class="card-text mb-0">Electrical and Electronics</p> -->
+                  <p class="card-text">Technocolabs <span>location</span></p> 
                 </div>
             </div>
-            <div class="col-lg"> 
-                <div class="card-body">
-                  <h5 class="card-title">SSLC</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">2015-2016</h6>
-                  <p class="card-text mb-0">Science</p>
-                  <p class="card-text">Tagore Matric Hr. Sec. School</p>
+            <div class="col-lg my-3 me-3"> 
+                <div class="card-body ">
+                  <h5 class="card-title">Artificial Intelligence (AI) with Python</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Jun 2021 - Jul 2021</h6>
+                  <!-- <p class="card-text mb-0">Electrical and Electronics</p> -->
+                  <p class="card-text">IEEE SB PIT & Pantech, Chennai</p>
                 </div>
             </div>
-          </div>
-           
+        </div>
         </div>
     </section>
     <hr>  
-    <section >
+    <section id="contact">
+
         <h2 id="sec-title" class="text-center">Contact</h2>
         <!-- <hr class="b_border"> -->
+<div class="container ">
+  <div class="row mt-5">
+    <form action="#" method="POST" class="contact-form">
+        <div class="row">
+            <div class="col ">
+                <label for="name">Name</label>
+            </div>
+            <div class="col">
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <label for="email">Email</label>
+            </div>
+            <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <label for="find-us">How will you find us?</label>
+            </div>
+            <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                    <option value="friends">Friends</option>
+                    <option value="search">Search-engine</option>
+                    <option value="ad">Advertisement</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <label for="news">Newsletter?</label>
+            </div>
+            <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <label for="ta">Drop a line</label>
+            </div>
+            <div class="col span-2-of-3">
+                <textarea name="text" id="ta" cols="30" rows="8"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <label for="name">&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+                <input type="submit" value="Send-me">
+            </div>
+        </div>
+    </form>
+</div>
+
+</div>
         
     </section>
 
@@ -164,6 +236,7 @@
 });
     </script>
 
+
 <!-- Change active hover -->
 <script>
   $(document).ready(function(){
@@ -173,5 +246,6 @@
     })
   })
 </script>
+
 
 </html>
