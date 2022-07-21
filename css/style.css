@@ -21,6 +21,26 @@ header{
   background-size: cover;
   z-index: 1;
 }
+.navbar .nav-item .nav-link{
+  position: relative;
+  padding: 10px 0;
+}
+.navbar .nav-item .nav-link::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  transform: scale(0);
+
+}
+.navbar .nav-item .nav-link:hover::before,.navbar .nav-item .nav-link.active::before{
+  /* width: fit-content; */
+  transform: scale(1);
+}
 
 .profile{
     z-index: 2;
@@ -42,6 +62,11 @@ header{
 }
 section {
     padding: 80px 0;
+  }
+  .col-lg{
+    background-color: #1DA1F2;
+    margin: 40px 40px;
+    border-radius: 5px;
   }
 .section-features{
   /* margin-bottom: 10px; */
