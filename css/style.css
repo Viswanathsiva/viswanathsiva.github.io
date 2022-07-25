@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 } 
 header{
-    background-image: linear-gradient(rgba(182, 252, 243, 0.659), rgba(182, 241, 252, 0.612)),url("../images/cover_bg_3.jpg");
+    background: linear-gradient(rgba(182, 252, 243, 0.659), rgba(182, 241, 252, 0.612)),url("../images/cover_bg_3.jpg");
     
   background-attachment: fixed;
   height: 100vh;
@@ -62,11 +62,12 @@ header{
     color: rgb(221, 76, 51);
 }
 section  {
-    padding: 80px 0;
-    height: 100vh;
+    padding: 50px 0;
+    /* height: 100vh;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
   }
+
   .col-3{
     border: 1px solid;
   }
@@ -82,7 +83,8 @@ section  {
 
 
 #sec-title{
-    color: #555;
+  margin-top: 50px;
+  color: #555;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 180%;
@@ -96,7 +98,7 @@ section  {
   /* border: 1px solid; */
   width: fit-content;
   padding: 3px 5px;
-  color: #fff !important;
+  color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
 }
@@ -109,24 +111,38 @@ h2:after {
     margin: 0 auto;
     margin-top: 15px;
   }
-
-  
+#contact{
+  padding: 50px 0px 0px 0px;
+  height: 100vh;
+ background-position: center;
+ background-size: cover;
+ background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+}
+.chat-text{
+  font-family: 'Nanum Brush Script', cursive;
+}
+.cht-content{
+  margin-top: 130px;
+}
 footer{
-    margin-top: 10px;
-    background-color: hsl(224,56%,12%);
+    margin-top: 194px;
+    /* background-color: hsl(224,56%,12%); */
+    background-color: #f95959;
     height: fit-content;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
     color: #fff;
+    
 }
 
 .copy{
    font-size: x-small;
 }
 .footer__icon {
-    font-size: 2rem;
-    color: rgb(14, 13, 13);
-    margin: 10px;
+    font-size: 3rem;
+    /* color: rgb(14, 13, 13); */
+    color: rgb(123, 123, 123);
+    margin: 9px;
 }
 .fb-a:hover{
     color: #4267B2;
