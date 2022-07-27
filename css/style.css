@@ -6,14 +6,10 @@
  html,
 body {
   background-color: #ffffff;
-  /* font-family: "Lato", sans-serif; */
-  /* text-rendering: optimizeLegibility; */
-  /* font-weight: 300; */
-  /* font-size: 10px; */
   overflow-x: hidden;
 } 
 header{
-    background: linear-gradient(rgba(182, 252, 243, 0.659), rgba(182, 241, 252, 0.612)),url("../images/cover_bg_3.jpg");
+    background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)),url("../images/cover_bg_3.jpg");
     
   background-attachment: fixed;
   height: 100vh;
@@ -53,6 +49,29 @@ header{
 .prf_pic{
    width:200px;
    border-radius: 50% ;
+
+}
+.home-icon{
+  font-size: 3rem;
+    color: #fff;
+    margin: 8px;
+}
+.home-icon:hover{
+  /* background: -webkit-radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%); */
+  /* background: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%);
+  -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: #e375ff;
+  transition: 0.4s;
+  /* box-shadow: -2px -1px 32px rgba(255, 255, 255, 0.2); */
+}
+.iconify{
+  margin-top: -15px;
+}
+.iconify:hover{
+  color: rgb(47, 195, 99);
+  background-color: #fff;
+  transition: 0.4s;
 
 }
 .b_border{
@@ -116,7 +135,7 @@ h2:after {
   height: 100vh;
  background-position: center;
  background-size: cover;
- background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+ background: linear-gradient(179.4deg, rgb(238, 243, 248) 2.2%, rgb(56, 104, 192) 96.2%);
 }
 .chat-text{
   font-family: 'Nanum Brush Script', cursive;
@@ -127,7 +146,7 @@ h2:after {
 footer{
     margin-top: 194px;
     /* background-color: hsl(224,56%,12%); */
-    background-color: #f95959;
+    background-color: #4267B2;
     height: fit-content;
     text-align: center;
     padding: 3rem 0;
@@ -141,7 +160,7 @@ footer{
 .footer__icon {
     font-size: 3rem;
     /* color: rgb(14, 13, 13); */
-    color: rgb(123, 123, 123);
+    color: #fff;
     margin: 9px;
 }
 .fb-a:hover{
@@ -149,8 +168,11 @@ footer{
     transition: 0.4s;    
 }
 .in-a:hover{
- color: #F56040;
- transition: 0.4s;
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ transition: 0.4s background;
 }
 .tw-a:hover{
 color: #1DA1F2;
