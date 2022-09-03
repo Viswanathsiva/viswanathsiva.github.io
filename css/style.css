@@ -3,25 +3,25 @@
   padding: 0;
   /* box-sizing: border-box; */
 }
- html,
+html,
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-} 
-header{
-    background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)),url("../images/cover_bg_3.jpg");
-    
+}
+header {
+  background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)), url("../images/cover_bg_3.jpg");
+
   background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-size: cover;
   z-index: 1;
 }
-.navbar .nav-item .nav-link{
+.navbar .nav-item .nav-link {
   position: relative;
   padding: 10px 0;
 }
-.navbar .nav-item .nav-link::before{
+.navbar .nav-item .nav-link::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -31,74 +31,77 @@ header{
   background-color: #fff;
   transition: all 0.5s ease;
   transform: scale(0);
-
 }
 .navbar .nav-item .nav-link:hover::before,
-.navbar .nav-item .nav-link.active::before{
+.navbar .nav-item .nav-link.active::before {
   /* width: fit-content; */
   transform: scale(1);
 }
 
-.profile,.personal-info{
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.profile,
+.personal-info {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.prf_pic{
-   width:200px;
-   border-radius: 50% ;
 
+.prf_pic {
+  width: 200px;
+  border-radius: 50%;
+  /* filter: brightness(120%); */
 }
-.home-icon{
+.home-icon {
   font-size: 3rem;
-    color: #fff;
-    margin: 8px;
+  color: #fff;
+  margin: 8px;
 }
-.home-icon:hover{
+.home-icon:hover {
   /* background: -webkit-radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%); */
   /* background: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%);
-  -webkit-background-clip: text; */
+-webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
   color: #e375ff;
   transition: 0.4s;
   /* box-shadow: -2px -1px 32px rgba(255, 255, 255, 0.2); */
 }
-.iconify{
+.iconify {
   margin-top: -15px;
 }
-.iconify:hover{
+.iconify:hover {
   color: rgb(47, 195, 99);
   background-color: #fff;
   transition: 0.4s;
-
 }
-.b_border{
-    width: 80px;
-    border: 2px solid ;
-    margin: 0px auto 0px auto;
-    color: rgb(221, 76, 51);
+.b_border {
+  width: 80px;
+  border: 2px solid;
+  margin: 0px auto 0px auto;
+  color: rgb(221, 76, 51);
 }
-section  {
-    padding: 50px 0;
-  }
+section {
+  padding: 50px 0;
+  /* height: 100vh;
+  background-position: center;
+  background-size: cover; */
+}
 
-  .col-3{
-    border: 1px solid;
-  }
-  .col-lg,.col-4{
-    background-color: #cccccc;
-    /* margin: 40px 40px; */
-    /* margin-top: 30px; */
-    border-radius: 5px;
-  }
-  .intern-sec{
-    padding: 40px 0px 0px 0px;
-  }
+.col-3 {
+  border: 1px solid;
+}
+.col-lg,
+.col-4 {
+  background-color: #cccccc;
+  /* margin: 40px 40px; */
+  /* margin-top: 30px; */
+  border-radius: 5px;
+}
+.intern-sec {
+  padding: 40px 0px 0px 0px;
+}
 
-
-#sec-title{
+#sec-title {
   margin-top: 50px;
   color: #555;
   font-weight: 400;
@@ -109,7 +112,7 @@ section  {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
-.card-subtitle{
+.card-subtitle {
   font-size: small;
   /* border: 1px solid; */
   width: fit-content;
@@ -119,63 +122,81 @@ section  {
   background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
 }
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #c257dd;
-    content: "";
-    width: 50px;
-    margin: 0 auto;
-    margin-top: 15px;
-  }
-#contact{
-  padding: 50px 0px 0px 0px;
+  display: block;
+  height: 2px;
+  background-color: #c257dd;
+  content: "";
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#tech {
+  /* padding: 50px 0px 0px 0px; */
   height: 100vh;
- background-position: center;
- background-size: cover;
- background: linear-gradient(179.4deg, rgb(238, 243, 248) 0%, rgb(56, 104, 192) 96.2%);
+  background-position: center;
+  background-size: cover;
+  background: #131619;
+  color: #cccccc;
 }
-.chat-text{
-  font-family: 'Nanum Brush Script', cursive;
+.colored{
+  font-size: 45px;
+  margin: 0px 10px;
+ 
 }
-.cht-content{
-  margin-top: 130px;
-}
-footer{
-    margin-top: 194px;
-    /* background-color: hsl(224,56%,12%); */
-    background-color: #4267B2;
-    height: fit-content;
-    text-align: center;
-    padding: 3rem 0;
-    color: #fff;
-    
+.icons{
+  width:50px;
+  margin: 0px 10px;
 }
 
-.copy{
-   font-size: x-small;
+#contact {
+  padding: 50px 0px 0px 0px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(179.4deg, rgb(238, 243, 248) 0%, rgb(56, 104, 192) 96.2%);
+}
+.chat-text {
+  font-family: "Nanum Brush Script", cursive;
+}
+.cht-content {
+  margin-top: 130px;
+}
+footer {
+  margin-top: 194px;
+  /* background-color: hsl(224,56%,12%); */
+  background-color: #4267b2;
+  height: fit-content;
+  text-align: center;
+  padding: 3rem 0;
+  color: #fff;
+  
+}
+
+.copy {
+  font-size: x-small;
 }
 .footer__icon {
-    font-size: 3rem;
-    /* color: rgb(14, 13, 13); */
-    color: #fff;
-    margin: 9px;
+  font-size: 3rem;
+  /* color: rgb(14, 13, 13); */
+  color: #fff;
+  margin: 9px;
 }
-.fb-a:hover{
-    color: #4267B2;
-    transition: 0.4s;    
+.fb-a:hover {
+  color: #4267b2;
+  transition: 0.4s;
 }
-.in-a:hover{
-  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+.in-a:hover {
+  background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- transition: 0.4s background;
+  transition: 0.4s background;
 }
-.tw-a:hover{
-color: #1DA1F2;
-transition: 0.4s;
+.tw-a:hover {
+  color: #1da1f2;
+  transition: 0.4s;
 }
-.li-a:hover{
-color: #0077b5;
-transition: 0.4s;
+.li-a:hover {
+  color: #0077b5;
+  transition: 0.4s;
 }
