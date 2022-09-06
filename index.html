@@ -5,6 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
         <link rel="stylesheet" href="./css/style.css" />
@@ -20,6 +22,8 @@
         <title>Viswanathsiva V</title>
     </head>
     <body>
+        <div id="progressbar"></div>
+
         <header>
             <nav class="navbar-dark fixed-top bg-dark navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -153,16 +157,16 @@
             </section>
         </section>
 
-        <section id="tech" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
-            <h2 id="sec-title" class="text-center fw-bold">Tech Stack</h2>
-            <div class="z-10 w-100 tech-stack d-flex d-flex-col justify-content-center text-center">
-                <div class="w-50 h-100 d-flex justify-content-center text-center d-none d-md-block d-md-none d-lg-block">
-                    <img src="./images/webdev.svg" alt="webdev" class="w-100 webdev" draggable="false" />
+        <section id="tech"  data-aos-duration="2000" data-aos-anchor-placement="top-center">
+            <h2 id="sec-title" class="text-center">Tech Stack</h2>
+            <div class="row d-flex d-flex-col justify-content-center text-center">
+                <div class="col-6 w-50 h-100 d-flex justify-content-center text-center d-none d-md-block d-md-none d-lg-block">
+                    <img src="./images/webdev.svg" alt="webdev" class="w-100 webdev d-block" draggable="false" />
                 </div>
                 <!-- <hr class="b_border"> -->
-                <div class="w-50 justify-content-center text-center">
-                    <div class="flex flex-col justify-center items-center">
-                        <p class="fw-bold fs-5">Languages:</p>
+                <div class="col-6 w-50 justify-content-center text-center">
+                    <div class="">
+                        <p class="fw-bold fs-6">Languages:</p>
                         <div class="justify-content-center d-flex justify-content-center">
                             <i class="devicon-html5-plain-wordmark colored "></i>
                             <i class="devicon-css3-plain-wordmark colored"></i>
@@ -171,44 +175,39 @@
                             <i class="devicon-javascript-plain colored"></i>
                         </div>
                     </div>
-
-                    <div class="flex flex-col justify-center items-center">
-                        <p class="fw-bold fs-5">Frameworks:</p>
+                    <div class="mt-1">
+                        <p class="fw-bold fs-6">Frameworks:</p>
                         <div class="justify-content-center d-flex justify-content-center">
-        
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" class="icons mt-0" />
-
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" class="icons mt-0" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" class="icons mt-0"  draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" class="icons mt-0"  draggable="false"/>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-center items-center mt-2">
-                        <p class="fw-bold fs-5">Database:</p>
+                    <div class="mt-1">
+                        <p class="fw-bold fs-6">Database:</p>
                         <div class="justify-content-center d-flex justify-content-center">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" class="icons mt-0" />
-
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" class="icons mt-0" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" class="icons mt-0"  draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" class="icons mt-0"  draggable="false"/>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-center items-center mt-2">
-                        <p class="fw-bold fs-5">Tools:</p>
+                    <div class="mt-1">
+                        <p class="fw-bold fs-6">Tools:</p>
                         <div class="justify-content-center d-flex justify-content-center">
-                            <img src="./images/eclipse_94656.svg" class="icons mt-0" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" class="icons mt-0" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" class="icons mt-0" />
+                            <img src="./images/eclipse_94656.svg" class="icons mt-0" draggable="false" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" class="icons mt-0"  draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" class="icons mt-0"  draggable="false"/>
                         </div>
                     </div>
-
-                    <div class="flex flex-col justify-center items-center mt-2">
-                        <p class="fw-bold fs-5">Version Control:</p>
+                    <div class="mt-1">
+                        <p class="fw-bold fs-6">Version Control:</p>
                         <div class="justify-content-center d-flex justify-content-center">
-                            <img src="https://img.shields.io/badge/git-%23F05033.svg?logo=git&amp;logoColor=white" alt="" class="m-2 md:m-3 h-8 select-none pointer-events-none" draggable="false" />
-                            <img src="https://img.shields.io/badge/github-%23121011.svg?logo=github&amp;logoColor=white" alt="" class="m-2 md:m-3 h-8 select-none pointer-events-none" draggable="false" />
+                            <img src="https://img.shields.io/badge/git-%23F05033.svg?logo=git&amp;logoColor=white" alt="" class="" draggable="false" />
+                            <img src="https://img.shields.io/badge/github-%23121011.svg?logo=github&amp;logoColor=white" alt="" class="" draggable="false" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+        <section id="contact"  data-aos-duration="2000" data-aos-anchor-placement="top-center">
             <h2 id="sec-title" class="text-center">Contact</h2>
             <!-- <hr class="b_border"> -->
             <div class="cht-content">
@@ -221,20 +220,25 @@
                         <a class="tw-a footer__icon" href="https://www.twitter.com/viswanath_siva_/ " target="_blank"><i class="bx bxl-twitter"></i></a>
                         <a class="li-a footer__icon" href="https://www.linkedin.com/in/viswanathsiva" target="_blank"><i class="bx bxl-linkedin"></i></a>
                     </div>
+                    <!-- <div class="mt-5">
+                        <input type="text">
+                        <input type="text">
+                        <input type="submit" class="mx-2" value="Send me">
+                    </div> -->
                 </div>
             </div>
 
-            <footer>
-                <div class="container-fluid">
-                    <!-- <div class="container">
-          <hr class="f_border">
-        </div> -->
-                    <div class="copy">
-                        &#169;Copyright 2022. Made by <u><b>Viswanathsiva V</b></u>
-                    </div>
-                </div>
-            </footer>
         </section>
+        <footer>
+            <div class="container-fluid">
+                <!-- <div class="container">
+      <hr class="f_border">
+    </div> -->
+                <div class="copy">
+                    &#169;Copyright 2022. Made by <u><b>Viswanathsiva V</b></u>
+                </div>
+            </div>
+        </footer>
         <!-- </div> -->
 
         <!-- Optional JavaScript; choose one of the two! -->
@@ -254,4 +258,15 @@
     <script>
         AOS.init();
     </script>
+    <script type="text/javascript">
+        $(window). scroll (function (){
+        var scroll = $(window).scrollTop(),
+        dh=$(document).height(),
+        wh= $(window).height();
+        
+        scrollPercent=(scroll/ (dh-wh))*100;
+        $('#progressbar').css('height', scrollPercent + '%');
+        })
+        
+        </script>
 </html>
