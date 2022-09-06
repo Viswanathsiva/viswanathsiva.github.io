@@ -8,6 +8,20 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+::-webkit-scrollbar
+{
+width:  0px;
+}
+#progressbar{
+
+position : fixed;
+top: 50px;
+right: 0;
+width: 5px;
+height: 100;
+border-radius : 10px;
+background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);}
+
 header {
   background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)), url("../images/cover_bg_3.jpg");
 
@@ -130,6 +144,9 @@ h2:after {
   margin: 0 auto;
   margin-top: 15px;
 }
+#education{
+  
+}
 #tech {
   /* padding: 50px 0px 0px 0px; */
   height: 100vh;
@@ -153,7 +170,7 @@ h2:after {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background: linear-gradient(179.4deg, rgb(238, 243, 248) 0%, rgb(56, 104, 192) 96.2%);
+  background: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
 }
 .chat-text {
   font-family: "Nanum Brush Script", cursive;
@@ -162,15 +179,16 @@ h2:after {
   margin-top: 130px;
 }
 footer {
-  margin-top: 194px;
+  /* margin-top: 194px; */
   /* background-color: hsl(224,56%,12%); */
-  background-color: #4267b2;
+  /* background-color: #4267b2; */
+  background-color: #418aa0;
   height: fit-content;
   text-align: center;
   padding: 3rem 0;
   color: #fff;
-  position: relative;
-  bottom: 0;
+  /* position: relative;
+  bottom: 0; */
   
 }
 
