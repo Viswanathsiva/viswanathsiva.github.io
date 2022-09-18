@@ -13,7 +13,6 @@ body {
 width:  0px;
 }
 #progressbar{
-
 position : fixed;
 top: 50px;
 right: 0;
@@ -106,10 +105,14 @@ section {
 }
 .col-lg,
 .col-4 {
-  background-color: #cccccc;
+  background-color: lavenderblush;
   /* margin: 40px 40px; */
   /* margin-top: 30px; */
   border-radius: 5px;
+}
+.col-lg:nth-child(odd){
+  /* background-color: lavenderblush; */
+  background-color: lavenderblush;
 }
 .intern-sec {
   padding: 40px 0px 0px 0px;
@@ -172,6 +175,7 @@ h2:after {
   background-size: cover;
   background: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
 }
+
 .chat-text {
   font-family: "Nanum Brush Script", cursive;
 }
@@ -194,7 +198,11 @@ footer {
 
 .copy {
   font-size: x-small;
+  text-align: center;
+  margin-top: -30px;
+  cursor: pointer;
 }
+
 .footer__icon {
   font-size: 3rem;
   /* color: rgb(14, 13, 13); */
@@ -219,4 +227,13 @@ footer {
 .li-a:hover {
   color: #0077b5;
   transition: 0.4s;
+}
+input:invalid{
+  animation: invalidInput .5s;
+}
+@keyframes invalidInput {
+  0% {transform: skew(-15deg);}
+  25% {transform: skew(15deg);}
+  50% {transform: skew(-15deg);}
+  100% {transform: skew(0deg);}
 }
