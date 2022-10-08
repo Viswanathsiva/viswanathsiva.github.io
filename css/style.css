@@ -8,21 +8,26 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
-::-webkit-scrollbar
-{
-width:  0px;
+::-webkit-scrollbar {
+  width: 0px;
 }
-#progressbar{
-position : fixed;
-top: 50px;
-right: 0;
-width: 5px;
-height: 100;
-border-radius : 10px;
-background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);}
+#progressbar {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 5px;
+  height: 100;
+  border-radius: 10px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 197, 61) 0%,
+    rgb(255, 94, 7) 90%
+  );
+}
 
 header {
-  background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)), url("../images/cover_bg_3.jpg");
+  background: linear-gradient(rgba(20, 20, 20, 0.659), rgba(16, 17, 17, 0.612)),
+    url("../images/cover_bg_3.jpg");
 
   background-attachment: fixed;
   height: 100vh;
@@ -103,14 +108,13 @@ section {
 .col-3 {
   border: 1px solid;
 }
-.col-lg,
-.col-4 {
+.col-lg {
   background-color: lavenderblush;
   /* margin: 40px 40px; */
   /* margin-top: 30px; */
   border-radius: 5px;
 }
-.col-lg:nth-child(odd){
+.col-lg:nth-child(odd) {
   /* background-color: lavenderblush; */
   background-color: lavenderblush;
 }
@@ -136,7 +140,11 @@ section {
   padding: 3px 5px;
   color: rgb(255, 255, 255) !important;
   border-radius: 5px;
-  background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
 }
 h2:after {
   display: block;
@@ -147,8 +155,7 @@ h2:after {
   margin: 0 auto;
   margin-top: 15px;
 }
-#education{
-  
+#education {
 }
 #tech {
   /* padding: 50px 0px 0px 0px; */
@@ -158,13 +165,12 @@ h2:after {
   background: #131619;
   color: #cccccc;
 }
-.colored{
+.colored {
   font-size: 45px;
   margin: 0px 10px;
- 
 }
-.icons{
-  width:50px;
+.icons {
+  width: 50px;
   margin: 0px 10px;
 }
 
@@ -173,7 +179,7 @@ h2:after {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  background: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
 }
 
 .chat-text {
@@ -193,7 +199,6 @@ footer {
   color: #fff;
   /* position: relative;
   bottom: 0; */
-  
 }
 
 .copy {
@@ -214,8 +219,22 @@ footer {
   transition: 0.4s;
 }
 .in-a:hover {
-  background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
-  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  background: -webkit-radial-gradient(
+    33% 100% circle,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.4s background;
@@ -228,12 +247,20 @@ footer {
   color: #0077b5;
   transition: 0.4s;
 }
-input:invalid{
-  animation: invalidInput .5s;
+input:invalid {
+  animation: invalidInput 0.5s;
 }
 @keyframes invalidInput {
-  0% {transform: skew(-15deg);}
-  25% {transform: skew(15deg);}
-  50% {transform: skew(-15deg);}
-  100% {transform: skew(0deg);}
+  0% {
+    transform: skew(-15deg);
+  }
+  25% {
+    transform: skew(15deg);
+  }
+  50% {
+    transform: skew(-15deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
 }
