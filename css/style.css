@@ -247,6 +247,10 @@ footer {
   color: #0077b5;
   transition: 0.4s;
 }
+.sn-a:hover {
+  color: yellow;
+  transition: 0.4s;
+}
 input:invalid {
   animation: invalidInput 0.5s;
 }
