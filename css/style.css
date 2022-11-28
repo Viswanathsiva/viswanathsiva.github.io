@@ -5,7 +5,7 @@
 }
 html,
 body {
-  background-color: #ffffff;
+  background-color: #e7eaf6;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
@@ -18,11 +18,12 @@ body {
   width: 5px;
   height: 100;
   border-radius: 10px;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at 10% 20%,
     rgb(255, 197, 61) 0%,
     rgb(255, 94, 7) 90%
-  );
+  ); */
+  background-color: #e7f52b;
 }
 
 header {
@@ -179,7 +180,11 @@ h2:after {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
 }
 
 .chat-text {
@@ -201,13 +206,16 @@ footer {
   bottom: 0; */
 }
 
-.copy {
+.copyright {
   font-size: x-small;
   text-align: center;
-  margin-top: -30px;
+  color: #fff;
   cursor: pointer;
 }
-
+#footer_sec {
+  padding: 20px 0px !important;
+  background-color: rgb(110, 136, 161);
+}
 .footer__icon {
   font-size: 3rem;
   /* color: rgb(14, 13, 13); */
@@ -250,6 +258,13 @@ footer {
 .sn-a:hover {
   color: yellow;
   transition: 0.4s;
+}
+.buy_coffee {
+  border-radius: 50%;
+  width: 3%;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 input:invalid {
   animation: invalidInput 0.5s;
