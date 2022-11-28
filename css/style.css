@@ -261,7 +261,7 @@ footer {
 }
 .buy_coffee {
   border-radius: 50%;
-  width: 3%;
+  width: 50px;
   position: fixed;
   right: 30px;
   bottom: 30px;
