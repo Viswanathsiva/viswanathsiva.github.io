@@ -163,8 +163,12 @@ h2:after {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background: #131619;
-  color: #cccccc;
+  /* background: #131619; */
+  color: #3f3e3e;
+}
+#tech p {
+  margin-top: 15px;
+  margin-bottom: 5px !important;
 }
 .colored {
   font-size: 45px;
