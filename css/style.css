@@ -110,14 +110,14 @@ section {
   border: 1px solid;
 }
 .col-lg {
-  background-color: lavenderblush;
+  background-color: #fff;
   /* margin: 40px 40px; */
   /* margin-top: 30px; */
   border-radius: 5px;
 }
 .col-lg:nth-child(odd) {
   /* background-color: lavenderblush; */
-  background-color: lavenderblush;
+  background-color: #fff;
 }
 .intern-sec {
   padding: 40px 0px 0px 0px;
@@ -155,8 +155,6 @@ h2:after {
   width: 50px;
   margin: 0 auto;
   margin-top: 15px;
-}
-#education {
 }
 #tech {
   /* padding: 50px 0px 0px 0px; */
@@ -264,7 +262,6 @@ footer {
   transition: 0.4s;
 }
 .buy_coffee {
-  border-radius: 50%;
   width: 50px;
   position: fixed;
   right: 30px;
