@@ -23,7 +23,7 @@ body {
     rgb(255, 197, 61) 0%,
     rgb(255, 94, 7) 90%
   ); */
-  background-color: #e7f52b;
+  background-color: #fa7d16;
 }
 
 header {
@@ -134,9 +134,10 @@ section {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
-.card-subtitle {
-  font-size: small;
-  /* border: 1px solid; */
+.time-period {
+  margin-top: 3px !important;
+  font-size: 11px;
+  font-weight: 700;
   width: fit-content;
   padding: 3px 5px;
   color: rgb(255, 255, 255) !important;
@@ -147,6 +148,9 @@ section {
     rgb(139, 102, 241) 100%
   );
 }
+/* #work p {
+  margin-bottom: 0.5rem !important;
+} */
 h2:after {
   display: block;
   height: 2px;
